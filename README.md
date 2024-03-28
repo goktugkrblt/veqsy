@@ -43,7 +43,6 @@ Live: https://goktug.bio/veqsy/
 
 - **Creating a Note:** You can create a new note by clicking the "New Note" button on the home page.
 - **Editing a Note:** You can edit the content of a created note by clicking on it.
-- **Deleting a Note:** To delete a note, you can click on the delete button in the top right corner of the note.
 
 ## Contribution
 
