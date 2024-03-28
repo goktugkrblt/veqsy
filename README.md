@@ -22,16 +22,16 @@ Live: https://goktug.bio/veqsy/
 
 1. Clone this repository:
 
-git clone https://github.com/goktugkrblt/veqsy.git
+    git clone https://github.com/goktugkrblt/veqsy.git
 
 
 2. Navigate to the project directory:
 
-cd veqsy
+    cd veqsy
 
 3. Install the necessary dependencies:
 
-npm install
+    npm install
 
 
 4. Start the application:
