@@ -2,6 +2,8 @@
 
 veqsy is a simple note-taking application. Users can create, edit, delete, and search notes.
 
+Live: https://goktug.bio/veqsy/
+
 ## Features
 
 - Users can create and save notes.
