@@ -47,7 +47,3 @@ Live: https://goktug.bio/veqsy/
 ## Contribution
 
 If you would like to contribute, please feel free to submit a pull request. We welcome your contributions!
-
-## License
-
-This project is licensed under the MIT License. For more information, see the [LICENSE](LICENSE) file.
