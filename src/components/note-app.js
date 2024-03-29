@@ -19,13 +19,11 @@ const NoteApp = () => {
   const noteInputRef = useRef(null);
 
   useEffect(() => {
-    // Sayfa yüklendiğinde ve her yenilendiğinde local storage'dan notları çek
     const storedNotes = JSON.parse(localStorage.getItem("notes")) || [];
     setNotes(storedNotes);
-  }, []); // Boş dependency array, bu effect'in yalnızca bir kez çalışmasını sağlar
+  }, []); 
   
   useEffect(() => {
-    // Her notes değiştiğinde local storage'ı güncelle
     localStorage.setItem("notes", JSON.stringify(notes));
   }, [notes]);
 
@@ -49,7 +47,6 @@ const NoteApp = () => {
 
       setNextDataId(nextDataId + 1);
 
-      // Sıfırla
       noteInputRef.current.value = "";
     }
   };
@@ -64,10 +61,8 @@ const NoteApp = () => {
 
   const handleDivClick = (dataId, event) => {
     if (event && event.target && event.target.classList.contains("trash-btn")) {
-      // Eğer trash butonuna tıklandıysa, sadece silme işlemi yap
       handleDeleteNote(dataId);
     } else {
-      // Eğer trash butonuna tıklanmadıysa, normal işlemleri yap
       setSelectedDataId(dataId);
       setNoteContent(dataId);
     }
@@ -77,20 +72,16 @@ const NoteApp = () => {
     const updatedNotes = notes.filter((note) => note.dataId !== dataId);
     setNotes(updatedNotes);
   
-  // Eğer silinen not şu anda seçili olan notsa veya sadece bir not varsa
 if (selectedDataId === dataId || updatedNotes.length === 1) {
   const newSelectedDataId = updatedNotes.length > 0 ? updatedNotes[0].dataId : null;
   setSelectedDataId(newSelectedDataId);
 
-  // Sadece silinen notun dataId'sine eşitse içeriği güncelle
   setNoteContent(newSelectedDataId);
 
-  // Günlük
   console.log("Deleted DataId:", dataId);
   console.log("Selected DataId After Deletion:", newSelectedDataId);
 
-  // Sıfırla
-  noteInputRef.current.value = ""; // directly set the value to an empty string
+  noteInputRef.current.value = ""; 
 }
 
 
