@@ -1,0 +1,26 @@
+.player {
+  position: relative;
+  height: 540px;
+  width: 960px;
+}
+
+.player-controls {
+  background: black;
+  color: white;
+  height: 36px;
+  line-height: 32px;
+  margin: -5px 0 0;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+}
+
+.player-arrow {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 18px;
+  outline: none;
+  position: relative;
+  top: 2px;
+}
