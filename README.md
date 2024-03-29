@@ -1,6 +1,8 @@
 # veqsy
 
-veqsy is a simple note-taking application. Users can create, edit, delete, and search notes.
+![veqsy-app](https://raw.githubusercontent.com/goktugkrblt/veqsy/main/public/app-readme.png)
+
+Veqsy is a simple note-taking application. Users can create, edit, delete, and search notes.
 
 Live: https://goktug.bio/veqsy/
 
